@@ -1,0 +1,235 @@
+/* html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark */ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; vertical-align:baseline; background:transparent; } body { /* プロジェクトによって変動 */ min-width: 1000px; color: #000; line-height: 1.6; font-weight: 400; font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; width: 100%; font-smoothing: antialiased; font-variant-numeric: tabular-nums; /* safari hover対策 */ -webkit-font-smoothing: antialiased; } article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section { display:block; } ul, ol { list-style:none; } blockquote, q { quotes:none; } blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; } a { margin:0; padding:0; vertical-align:baseline; text-decoration: none; color: inherit; } /* change colours to suit your needs */ ins { background-color:#ff9; color:#000; text-decoration:none; } /* change colours to suit your needs */ mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; } del { text-decoration: line-through; } abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; } table { border-collapse:collapse; border-spacing:0; } /* change border colour to suit your needs */ hr { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0; } input, select { vertical-align:middle; } img { vertical-align: bottom; line-height: 1.0; } button { line-height: 1.0; background-color: transparent; border: none; cursor: pointer; outline: none; padding: 0; appearance: none; } 
+
+html,
+body{
+  font-size: 1.8rem;
+  text-align: center;
+  background-image: url(argentina-4908076.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center center; 
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+}
+
+body{
+  background-color: rgba(184, 184, 184, 0.3);
+}
+
+.page-header,
+.page-footer,
+.main-content{
+  margin: 30px 0;
+  /* border: 5px solid red; */
+}
+
+.main-nav{
+  position: relative;
+  z-index: 10;
+}
+
+.main-picup{
+  z-index: 0;
+}
+
+.main-nav,
+.main-picup{
+  margin: 30px 0;
+  /* border: 5px solid green; */
+}
+
+.main-picup__content{
+  margin: 30px 0;
+  /* border: 5px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-picup__content__left,
+.main-picup__content__light{
+  margin: 30px 0;
+  /* border: 5px solid pink; */
+  position: relative;
+}
+
+.main-picup__content__left a,
+.main-picup__content__light a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
+}
+
+.page-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 250, 154, 0.9);
+  height: 3rem;
+  margin: 0;
+}
+.page-header__light{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header__logo img{
+  width: auto;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.page-header__light__info a{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgba(0, 69, 212, 0.47);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.page-header__light__info a:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.page-header__light__login a{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  color: rgba(0, 69, 212, 0.47);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.page-header__light__login a:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.my-parts{
+  font-size: 20px;
+}
+.my-parts ul {
+	list-style: none;
+	margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-parts ul::after {
+	content: "";
+	display: block;
+  clear: both;
+}
+.my-parts ul > li {
+	float: left;
+	position: relative;
+	width: 20%;
+	box-sizing: border-box;
+}
+.my-parts ul li a {
+	display: block;
+	padding: .4em .8em;
+	text-decoration: none;
+	color: rgb(240, 235, 235);
+	background: rgb(62, 62, 230);
+  text-align: center;
+  margin: 3px;
+  border-radius: 7px;
+}
+.my-parts ul li a:hover {
+	background: rgb(7, 125, 243);
+}
+.my-parts ul > li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+.my-parts ul > li li {
+	float: none;
+	width: 100%;
+}
+.my-parts ul li:hover ul {
+	display: block;
+}
+
+.main-picup__content__left,
+.main-picup__content__light{
+  width: 30%;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+}
+
+.main-picup__content__left h1,
+.main-picup__content__light h1{
+  font-size: 1rem;
+}
+
+
+.main-picup__content__left{
+  margin-left: 10%;
+}
+
+.main-picup__content__light{
+  margin-right: 10%;
+}
+
+.main-picup__content__left img,
+.main-picup__content__light img{
+  width: 30%;
+  height: auto;
+}
+
+.main-picup__content__left p,
+.main-picup__content__light p{
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.page-footer{
+  background-color: rgb(19, 16, 16);
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  margin: 0;
+}
+
+.page-footer__box{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.page-footer__rule{
+  padding: 0 5px;
+  border-right: white solid 1px;
+  font-weight: lighter;
+}
